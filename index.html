@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghu HTML Assignment</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <h2> <u>Assignment No</u>:1 <small>By Raghu Sai</small> </h2>
+
+    <hr>
+    <div class="container">
+        <h3>Index</h3>
+            <ul>
+                <li><a href="#Q1">Q1: What is HTML and examples</a></li>
+                <li><a href="#Q2">Q2: HTML Quotes</a> </li>
+                <li><a href="#Q3">Q3: Video and attributes</a> </li>
+                <li><a href="#Q4">Q4: HTML Attributes</a> </li>
+                
+            </ul>
+
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3><u>Topics</u>: Introduction to HTML & CSS: </h3> <br>
+        <h4 id="Q1">Q. 1 - What is HTML?</h4>
+        <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed
+            in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages
+            such as JavaScript.</p>
+
+        <ul>
+            <li>HTML is the standard markup language for Web pages.</li>
+            <li>With HTML you can create your own Website.</li>
+            <li>HTML is easy to learn - You will enjoy it!</li>
+        </ul>
+        <p>Below are few tags with examples.</p>
+        <h5><u>Table tag:</u></h5>
+        <div class="container">
+            <p>The &lt;table> tag defines an HTML table. An HTML table consists of one &lt;table&gt; element and one or
+                more &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; elements.</p>
+            <p>The &lt;tr&gt; element defines a table row, the &lt;th&gt; element defines a table header, and the
+                &lt;td&gt; element defines a table cell.</p>
+
+
+
+            <table class="table table-bordered table-hover table-condensed  table-responsive">
+                <thead>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Infosys</td>
+                        <td>infosys.com</td>
+                        <td>India</td>
+                    </tr>
+                    <tr>
+                        <td>Tesco</td>
+                        <td>tesco.com</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>Great West</td>
+                        <td>empower-retirement.com</td>
+                        <td>USA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+
+        <h5><u>Ordered and un-ordered list</u>:</h5>
+        <div class="container">
+            <p>Ordered list: The HTML &lt;ol&gt; tag defines an ordered list. An ordered list can be numerical or
+                alphabetical. Ordered HTML List. An ordered list starts with the &lt;ol&gt; &lt;/ol&gt;</p>
+            <ol>
+                <li>Bangalore</li>
+                <li>Hyderabad</li>
+                <li>Chennai</li>
+            </ol>
+
+            <p>Unordered list: An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the
+                &lt;li&gt; tag. The list items will be marked with bullets </p>
+            <ul>
+                <li>Apple</li>
+                <li>Google</li>
+                <li>Facebook</li>
+            </ul>
+
+        </div>
+        <hr>
+
+        <h5><u>Forms,input and labels:</u>:</h5>
+        <div class="container">
+            <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+            </p>
+
+            <form action="#href">
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input class="form-control" type="text" name="fname"> <br>
+                </div>
+
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input class="form-control" type="text" name="lname"> <br>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailid">Email id:</label>
+                    <input class="form-control" type="email" name="emailid"> <br>
+                </div>
+
+                <div class="form-group">
+                    <label for="cnum">Contact Number:</label>
+                    <input class="form-control" type="text" name="=cnum"> <br>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select name="gender" class="form-control">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                        <option value="O">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Select the City:</label>
+                    <input type="radio"> Bangalore
+                    <input type="radio"> Hyderabad
+                    <input type="radio"> Chennai
+
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback">Feedback:</label>
+                    <textarea class="form-control" class="form-control" name="feedback" id="txtArea" cols="25"
+                        rows="3"></textarea> <br>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox"> I agree with the terms & conditions.
+                </div>
+
+
+                <button class="btn btn-danger">Close</button>
+                <button class="btn btn-success">Submit</button>
+
+            </form>
+
+        </div>
+        <hr>
+
+        <h5><u>Self-Ending</u>:</h5>
+
+        <div class="container">
+            <p>There is no such thing as a self-Ending tag in HTML5 syntax. These are called “void-elements” in HTML
+                spec. Below are few examples.</p>
+        </div>
+
+        <ul>
+            <li>The &lt;br&gt; tag defines a line break, and is an empty element without a closing tag</li>
+            <li>The &lt;hr&gt; tag defines a thematic break in an HTML page</li>
+            <li>The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h4 id="Q2"> Q. 2 - Explain the term HTML Quotes and also explain the following terms too </h4>
+        <p> There are a number of HTML entities that come in handy when there’s a need for first-rate typesetting</p>
+
+
+        <dl>
+
+            <dt> Less than: &lt</dt>
+            <dd>To display a less than sign (<) we must write: & lt;</dd>
+
+            <dt>Greater than: &gt</dt>
+            <dd>To display a less than sign (>) we must write: & gt;</dd>
+
+            <dt>Double Quotes(left): &ldquo;</dt>
+            <dd>To display double quotes left we must use: &ldquo</dd>
+
+            <dt>Double Quotes(right): &rdquo;</dt>
+            <dd>To display double quotes right we must use: &rdquo</dd>
+
+
+        </dl>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h4 id="Q3"> Q. 3 - Describe the various HTML Elements required to embed the video in an document and
+            further explain the following HTML attributes : </h4>
+
+
+        <div class="container">
+            <h5><u>Video</u>:</h5>
+            <p>The &lt;video&gt; tag is used to embed video content in a document, such as a movie clip or other video
+                streams. The &lt;video&gt; tag contains one or more &lt;source&gt; tags with different video sources.
+                The browser will choose the first source it supports. The text between the &lt;video&gt; and
+                &lt;/video&gt; tags will only be displayed in browsers that do not support the &lt;video&gt; element.
+            </p>
+            <h5><u>Poster</u>:</h5>
+            <p>The <em>poster</em> attribute specifies an image to be shown while the video is downloading, or until the
+                user hits the play button. If this is not included, the first frame of the video will be used instead.
+            </p>
+
+            <label>attribute of video:</label>
+            <ul>
+                <li>src</li>
+                <li>poster</li>
+                <li>width</li>
+                <li>height</li>
+            </ul>
+            <br>
+            <h5> <strong> Play below video: </strong></h5>
+
+            <div class="container">
+                <video width="320" height="240" poster="images/InnomaticsLogo.png" controls autoplay>
+                    <source src="images/movie.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+
+    <div class="container">
+        <h4 id="Q4">Q. 4 - What do you mean by HTML Attributes? Explain the importance of HTML Attributes in
+            terms of functionalities. Write a HTML document code explaining the various HTML attributes</h4>
+
+        <p>HTML attributes provide additional information about HTML elements.</p>
+
+        <ul>
+            <li>All HTML elements can have attributes.</li>
+            <li>Attributes provide additional information about elements.</li>
+            <li>Attributes are always specified in the start tag.</li>
+            <li>Attributes usually come in name/value pairs like: name="value"</li>
+        </ul>
+
+
+        <div class="container">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th>S.No</th>
+                    <th>Tag</th>
+                    <th>Attribute</th>
+                    <th>Usage</th>
+                    <th>Exaple</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>&lt;img&gt;</td>
+                        <td>src, alt</td>
+                        <td>The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies
+                            the path to the image to be displayed</td>
+                        <td>
+                            <ul>
+                                <li>&lt;img src="img_girl.jpg"&gt;</li>
+                                <li>&lt;img src="img_girl.jpg" alt="image missing"&gt;</li>
+                            </ul>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>p</td>
+                        <td>style, title</td>
+                        <td>The style attribute is used to add styles to an element, such as color, font, size, and
+                            more.</td>
+                        <td>
+                            <ul>
+                                <li>&lt;p style="color:red;"&gt; This is a red paragraph. &lt;/p&gt;</li>
+                                <li>&lt;p title="I'm a tooltip"&gt; Mouse over this paragraph, to display the title
+                                    attribute as a tooltip.&lt;/p&gt;</li>
+                            </ul>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>a</td>
+                        <td>href</td>
+                        <td>href is one of the attributue of tag a, to naviage to specific path.</td>
+                        <td>&lt;a href="https://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>img</td>
+                        <td>width, height</td>
+                        <td>The width and height attributes of <img> </td>
+                        <td> &lt;img src="img_girl.jpg" width="240", height="320"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>&lt;iFrame&gt;</td>
+                        <td>src,height, width</td>
+                        <td>An inline frame is used to embed another document within the current HTML document.</td>
+                        <td>&lt;iframe src="index.html" height="400" width="600" title="Iframe Example"&gt;
+                            &lt;/iframe&gt;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
